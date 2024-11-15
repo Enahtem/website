@@ -1,0 +1,84 @@
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  height: 40px;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  background: transparent;
+}
+
+.app-brand {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.app-logo {
+  height: 100%;
+  margin-right: 0.5rem;
+}
+
+.app-title {
+  font-size: 2rem;
+  margin: 0;
+  color: white;
+}
+
+.app-nav {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 2rem;
+}
+
+.app-nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.app-nav a:hover {
+  opacity: 1;
+}
+
+.app-social {
+  height: 100%;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 1rem;
+}
+
+.app-social li {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.app-social a {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.app-social img {
+  height: 100%;
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.app-social a:hover img {
+  opacity: 1;
+}
