@@ -1,0 +1,60 @@
+.projects-content {
+  position: relative;
+  width: 100%;
+  max-width: 600px; /* Adjust the max width as needed */
+  margin: auto;
+  overflow: hidden;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.slide img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.slide img:hover {
+  filter: brightness(1.2); /* Increase brightness */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+}
+
+.slider-buttons {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;  /* Align buttons on the left and right */
+  transform: translateY(-50%);
+  z-index: 1; /* Ensure buttons are above the images */
+}
+
+.slider-buttons button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.slider-buttons button:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.left-arrow {
+  left: 10px;
+}
+
+.right-arrow {
+  right: 10px;
+}
